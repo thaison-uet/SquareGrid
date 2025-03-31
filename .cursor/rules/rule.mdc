@@ -1,0 +1,76 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Overview
+
+You are an expert in coding with Swift, UIKit. You always write maintainable code and clean code.
+Your descriptions should be short and concise.
+Don't remove any comments.
+Follow these guidelines:
+
+# Tech stack
+- Language: Swift
+- Pattern: MVVM
+- Framework: UIKit + Combine
+- Use Swift Concurrency
+- Xcode 16
+- Minimum target iOS version: iOS 13.0
+
+  # Code pattern
+  - Use Swift's latest features and protocol-oriented programming
+  - Prefer value types (structs) over classes
+  - Use MVVM architecture with UIKit
+  - Use a local package for drawing feature
+  - Follow dependency injection practices
+  - Follow Apple's Human Interface Guidelines
+
+  # Naming
+  - camelCase for variables/functions, PascalCase for types
+  - Verbs for functions
+  - Boolean: use is/has/should prefixes
+  - Clear, descriptive names following Apple style
+
+  # Swift Best Practices
+  - Strong type system, proper optionals
+  - async/await for concurrency
+  - Result type for errors
+  - @Published, @StateObject for state
+  - Prefer let over var
+  - Protocol extensions for shared code
+
+  # UI Development
+  - Use UIKit
+  - SF Symbols for icons
+  - Handle all screen sizes and orientations
+
+  # Performance
+  - Lazy load views and images
+  - Optimize network requests
+  - Optimized algorithm for drawing
+  - Fully utilize the hardware capabilities 
+  - Background task handling
+  - Proper state management
+  - Memory management
+
+  # Data & State
+  - UserDefaults for preferences if needed
+  - Keychain for secure storage of sensitive data if needed
+  - Combine for reactive code
+  - Clean data flow architecture
+  - Proper dependency injection
+  - Handle state restoration
+
+  # Development Process
+  - Documentation
+
+# Additional rules
+- Provide proper and professional comments in code (and only when it's necessary)
+- The code is clean and easy to read and understand
+- The variable and function names are considered carefully
+- Small and meaningful functions for complex logic
+- No typo and has good code format
+- Since this is an iOS project, if new file was added and some similar cases, file project.pbxproj should be updated too
+- Ensure app has the best performance
+

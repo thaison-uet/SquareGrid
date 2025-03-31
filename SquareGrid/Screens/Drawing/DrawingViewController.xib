@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawingViewController" customModule="SquareGrid" customModuleProvider="target">
+            <connections>
+                <outlet property="applyFiltersButton" destination="p9d-ZB-cOa" id="u0X-C1-62W"/>
+                <outlet property="loadImageButton" destination="bVK-7t-wuu" id="6Mp-mm-HGu"/>
+                <outlet property="scrollView" destination="sff-MK-DLx" id="XDH-pA-Wxd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sff-MK-DLx">
+                    <rect key="frame" x="0.0" y="59" width="393" height="669"/>
+                </scrollView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LvJ-tq-TjX" userLabel="Effect Button Stack View">
+                    <rect key="frame" x="0.0" y="728" width="393" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVK-7t-wuu" userLabel="Load Image Button">
+                            <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="45"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Load Image"/>
+                            <connections>
+                                <action selector="loadImageAction:" destination="-1" eventType="touchUpInside" id="dUG-eq-NAH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9d-ZB-cOa" userLabel="Apply Filters Button">
+                            <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="45"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Apply Filters"/>
+                            <connections>
+                                <action selector="applyFilterAction:" destination="-1" eventType="touchUpInside" id="GQW-DE-CWA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ZOA-74-iLB"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ugV-hl-Z1E" userLabel="Grid Button Stack View">
+                    <rect key="frame" x="0.0" y="773" width="393" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2p-OZ-q2W" userLabel="2x2 Button">
+                            <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="45"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="2x2"/>
+                            <connections>
+                                <action selector="draw2x2GridAction:" destination="-1" eventType="touchUpInside" id="2Qy-dX-w5F"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nua-FT-imo" userLabel="3x3 Button">
+                            <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="45"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="3x3"/>
+                            <connections>
+                                <action selector="draw3x3GridAction:" destination="-1" eventType="touchUpInside" id="RDg-Nz-oVB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="aQA-UC-nno"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="aKz-U7-VJv"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aKz-U7-VJv" firstAttribute="trailing" secondItem="sff-MK-DLx" secondAttribute="trailing" id="2bt-zG-ejB"/>
+                <constraint firstItem="aKz-U7-VJv" firstAttribute="trailing" secondItem="ugV-hl-Z1E" secondAttribute="trailing" id="5VM-H8-JJw"/>
+                <constraint firstItem="sff-MK-DLx" firstAttribute="height" secondItem="aKz-U7-VJv" secondAttribute="height" priority="250" id="758-Ga-4ce"/>
+                <constraint firstItem="LvJ-tq-TjX" firstAttribute="bottom" secondItem="ugV-hl-Z1E" secondAttribute="top" id="Cc0-CV-vcq"/>
+                <constraint firstItem="sff-MK-DLx" firstAttribute="bottom" secondItem="LvJ-tq-TjX" secondAttribute="top" id="J0Z-dY-h2F"/>
+                <constraint firstItem="sff-MK-DLx" firstAttribute="leading" secondItem="aKz-U7-VJv" secondAttribute="leading" id="PTs-yu-Uv8"/>
+                <constraint firstItem="sff-MK-DLx" firstAttribute="top" secondItem="aKz-U7-VJv" secondAttribute="top" id="XjK-V4-03B"/>
+                <constraint firstItem="LvJ-tq-TjX" firstAttribute="trailing" secondItem="ugV-hl-Z1E" secondAttribute="trailing" id="d0i-ud-2aB"/>
+                <constraint firstItem="sff-MK-DLx" firstAttribute="width" secondItem="aKz-U7-VJv" secondAttribute="width" id="e20-Cv-H5n"/>
+                <constraint firstItem="aKz-U7-VJv" firstAttribute="bottom" secondItem="ugV-hl-Z1E" secondAttribute="bottom" id="h8L-V4-GPx"/>
+                <constraint firstItem="ugV-hl-Z1E" firstAttribute="leading" secondItem="aKz-U7-VJv" secondAttribute="leading" id="lpS-z7-Fbs"/>
+                <constraint firstItem="LvJ-tq-TjX" firstAttribute="leading" secondItem="ugV-hl-Z1E" secondAttribute="leading" id="sX6-vU-wxW"/>
+            </constraints>
+            <point key="canvasLocation" x="81" y="-32"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

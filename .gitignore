@@ -1,0 +1,61 @@
+# === macOS System Files ===
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files
+Icon
+
+# Thumbnails
+._*
+
+# === Xcode ===
+
+# Build directories
+build/
+DerivedData/
+
+# Xcode user-specific data
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+# Xcode project files to ignore
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Generated files
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# === Swift Package Manager ===
+
+# SwiftPM build artifacts and configurations
+.build/
+.swiftpm/
+Package.resolved
+
+# === General ===
+
+# Temporary and backup files
+tmp/
+temp/
+*.tmp
+*~
+*.bak
+*.backup
+
+# Lock and log files
+*.lock
+*.log
