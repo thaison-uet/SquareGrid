@@ -21,7 +21,7 @@ A simple demo iOS app to create and manage grid-based drawings for Pixrl's asses
 - UIKit + Combine
 - Swift Concurrency
 - Protocol-oriented programming
-- Local package for drawing features
+- An individual package for drawing features
 
 ## Installation
 
