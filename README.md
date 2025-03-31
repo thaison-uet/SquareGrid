@@ -1,6 +1,6 @@
 # SquareGrid
 
-A iOS app to create and manage grid-based drawings for Pixrl's assessment
+A simple demo iOS app to create and manage grid-based drawings for Pixrl's assessment
 
 ## Features
 
@@ -33,7 +33,3 @@ A iOS app to create and manage grid-based drawings for Pixrl's assessment
 
 - ShapeDrawingKit: https://github.com/thaison-uet/ShapeDrawingKit.git
   A individiual Swift package for shape drawing, image display, and filter application using Metal for optimized graphics operations
-
-## License
-
-This project is proprietary and confidential.
