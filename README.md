@@ -5,7 +5,6 @@ A simple demo iOS app to create and manage grid-based drawings for Pixrl's asses
 ## Features
 
 - Grid drawing with customizable settings
-- Modern SwiftUI-based interface
 - Efficient drawing algorithms
 - Support for iOS 13.0 and later
 
